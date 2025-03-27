@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback para a página de perfil de João Victor</title>
+</head>
+<body>
+    <script>
+        const form = document.querySelector('form');
+        const submitButton = document.getElementById('submitButton');
+        form.addEventListener('input', () => {
+            submitButton.disabled = !form.checkValidity();
+        });
+    </script>
+
+    <form action="/submit" method="post">
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required aria-label="Digite seu nome completo">
+            <br>
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="exemplo@dominio.com">
+        </fieldset>
+
+        <fieldset>
+            <legend>How did you find my profile</legend>
+            <label for="profile"></label>
+            <select id="meio" name="meio" required>
+                <option value="">Selecione...</option>
+                <option value="brasil">Google</option>
+                <option value="eua">Mídia social</option>
+                <option value="japao">Amigo</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="Feedback"></label>
+            <input type="text" id="feedback" name="feedback" required aria-label="Coloque seu comentário">
+            <br>
+            <br>
+            <fieldset>
+                <legend>Opnião:</legend>
+                <label for="interesse">Você gostou do meu perfil?:</label>
+                <input type="radio" id="sim" value="sim">
+                <label for="interesse">Sim</label>
+                <input type="radio" id="nao" value="nao">
+                <label for="nao">Não</label>
+            </fieldset>
+                
+            <fieldset>
+                <label>O que você gostou no perfil?</label>
+                <br>
+                <input type="checkbox" id="esportes" name="interesses" value="esportes">
+                <label for="interesses">Design</label>
+                <br>
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="esportes">Conteúdo</label>
+                <br>
+                <input type="checkbox" id="musica" name="interesses" value="musica">
+                <label for="musica">Facilidade de uso</label>
+                <br>
+                <label for="musica">Outro:</label>
+                <input type="text" id="musica" name="interesses">
+        </fieldset>
+     </fieldset>
+
+
+        <button type="submit" id="submitButton" disabled>Enviar</button>
+        <button type="reset">Limpar</button>
+    
+    </form>
+<br>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/vNfgVjZF8_4?si=FnXzx8uGb60iHeu3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+  
+  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1165586428&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-997087889-45705490" title="Noah Sievert" target="_blank" style="color: #cccccc; text-decoration: none;">Noah Sievert</a> · <a href="https://soundcloud.com/user-997087889-45705490/someday-one-republic-noah-sievert-remix" title="Someday - One Republic (Noah Sievert Remix)" target="_blank" style="color: #cccccc; text-decoration: none;">Someday - One Republic (Noah Sievert Remix)</a></div>
+  
+
+</body>
+
+
+<footer>
+  <div class="rodape">
+    <p>Agradecemos por sua contribuição.</p>
+  </div>
+</footer>
+
+
+</html>
